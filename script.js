@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-  //actualizarDiasRestantes();
-  //setInterval(actualizarDiasRestantes, 1000); // Actualizar cada segundo
+  actualizarDiasRestantes();
+  setInterval(actualizarDiasRestantes, 1000); // Actualizar cada segundo
    // Datos para el gráfico de líneas
 const dataLine1 = {
   labels: ['Día 1', 'Día 2', 'Día 3', 'Día 4', 'Día 5'], // Etiquetas de los días],
   datasets: [{
-    label: 'Km recorridos en Semana 30',
-    data: [11, 14, 13, 19, 36], // Datos de los km recorridos en cada día
+    label: 'Km recorridos en Semana 32',
+    data: [10, 12, 8, 12, 24], // Datos de los km recorridos en cada día
     borderColor: 'rgba(75, 192, 192, 1)',
     fill: true,
     tension: 0.1
@@ -16,8 +16,8 @@ const dataLine1 = {
 const dataLine2 = {
   labels: ['Día 1', 'Día 2', 'Dia 3', 'Día 4', 'Día 5'], // Etiquetas de los días
   datasets: [{
-    label: 'Km recorridos en Semana 31',
-    data: [11, 17, 14, 20, 18], // Datos de los km recorridos en cada día
+    label: 'Km recorridos en Semana 33',
+    data: [10, 9, 10, 8, 17], // Datos de los km recorridos en cada día
     borderColor: 'rgba(153, 102, 255, 1)',
     fill: true,
     tension: 0.1
@@ -53,7 +53,7 @@ const myChartLine2 = new Chart(document.getElementById('myChart-line-2'), {
 
 function actualizarDiasRestantes() {
   // Fecha objetivo fija
-  const objetivoDate = new Date('2026-06-06');
+  const objetivoDate = new Date('2026-08-28');
   const currentDate = new Date();
   const timeDiff = objetivoDate - currentDate;
   const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
