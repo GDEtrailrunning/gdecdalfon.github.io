@@ -43,9 +43,40 @@ const myChartLine2 = new Chart(document.getElementById('myChart-line-2'), {
   type: 'line',
   data: dataLine2,
   options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        labels: {
+          color: '#374151',
+          font: chartFont
+        }
+      },
+      tooltip: {
+        titleFont: chartFont,
+        bodyFont: chartFont,
+        footerFont: chartFont
+      }
+    },
     scales: {
+      x: {
+        ticks: {
+          color: '#4b5563',
+          font: chartFont
+        },
+        grid: {
+          color: 'rgba(15, 23, 42, 0.08)'
+        }
+      },
       y: {
-        beginAtZero: true
+        beginAtZero: true,
+        ticks: {
+          color: '#4b5563',
+          font: chartFont
+        },
+        grid: {
+          color: 'rgba(15, 23, 42, 0.08)'
+        }
       }
     }
   }
