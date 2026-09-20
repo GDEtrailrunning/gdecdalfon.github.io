@@ -95,10 +95,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //Datos para el gráfico de líneas
   const dataLine1 = {
-    labels: ['Día 1', 'Día 2', 'Día 3', 'Día 4', 'Día 5'], // Etiquetas de los días
+    labels: ['Día 1', 'Día 2', 'Día 3', 'Día 4', 'Día 5'], // Etiquetas de los días], // Etiquetas de los días
     datasets: [{
-      label: 'Km recorridos en Semana 35',
-      data: [12, 14, 9, 10, 20], // Datos de los km recorridos en cada día
+      label: 'Km recorridos en Semana 36',
+      data: [16, 21, 19, 8, 25], // Datos de los km recorridos en cada día
       borderColor: 'rgba(45, 74, 62, 1)',
       backgroundColor: 'rgba(45, 74, 62, 0.16)',
       fill: true
@@ -108,8 +108,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const dataLine2 = {
     labels: ['Día 1', 'Día 2', 'Día 3', 'Día 4', 'Día 5'], // Etiquetas de los días
     datasets: [{
-      label: 'Total Km recorridos en Semana 33',
-      data: [10, 9, 10, 8, 17],// Datos de los km recorridos en cada día
+      label: 'Total Km recorridos en Semana 37',
+      data: [8, 10, 8, 8, 13],// Datos de los km recorridos en cada día
       borderColor: 'rgba(45, 78, 199, 1)',
       backgroundColor: 'rgba(45, 78, 199, 0.14)',
       fill: true
@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function actualizarDiasRestantes() {
   // Fecha objetivo fija
-  const objetivoDate = new Date('2026-08-28');
+  const objetivoDate = new Date('2026-11-11');
   const currentDate = new Date();
   const timeDiff = objetivoDate - currentDate;
   const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
