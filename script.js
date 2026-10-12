@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
     labels: ['Día 1', 'Día 2', 'Día 3'], // Etiquetas de los días
     datasets: [{
       label: 'Total Km recorridos en Semana 39',
-      data: [9, 7, 4],// Datos de los km recorridos en cada día
+      data: [9, 7, 4],
       borderColor: 'rgba(45, 78, 199, 1)',
       backgroundColor: 'rgba(45, 78, 199, 0.14)',
       fill: true
